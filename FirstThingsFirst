@@ -1,0 +1,3 @@
+firstline="Hello Python"
+secondline="hello World!"
+print(firstline +", " + secondline)
