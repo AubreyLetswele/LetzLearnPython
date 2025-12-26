@@ -1,3 +1,3 @@
 firstline="Hello Python"
-secondline="hello World!"
+secondline="Hello World"
 print(firstline +", " + secondline)
