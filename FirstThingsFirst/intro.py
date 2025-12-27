@@ -34,8 +34,20 @@ slice1=s[0:6]
 slice2=s[6:]
 print("Sliced string: ", slice1, slice2)
 
+# 5. Lists, creating a string list, works the same with other data types.
+Samsung_Items = [
+  "Smart TV", 
+  "smartphone", 
+  "laptop", 
+  "Buds",
+  "Tablet"
+]
+Samsung_Items.append("Refrigerator")  # Adding an item to the list.
+Samsung_Items[0]="Microwave" # lists are mutable, so we can change items.
+print(Samsung_Items[2])  # Accessing a specific item by index.
+print("Samsung Items: ", Samsung_Items)
 
-# 5. Simple function with 1 parameter and a default value.
+# 6. Simple function with 1 parameter and a default value.
 def greet_user(username="Guest"):
     """Displays a personalized greeting."""
     if isinstance(username, str) and username.strip():
