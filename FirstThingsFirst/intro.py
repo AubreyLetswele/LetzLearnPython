@@ -4,16 +4,16 @@
 firstline="Hello Python"
 secondline="Hello World"
 year=2025
-print(firstline +", " + secondline + " " + str(year))
+#print(firstline +", " + secondline + " " + str(year))
 
 
 # 2. getting datatypes and conditional booleans.
 name = "Aubrey"
 age = 21
 salary = 45000.50
-print(type(name))  
-print(type(salary))  
-print(isinstance(age, int))
+#print(type(name))  
+#print(type(salary))  
+#print(isinstance(age, int))
 
 
 
@@ -32,7 +32,7 @@ z7=round(x//y,1) #round to 1 decimal place.
 s="PythonProgramming"
 slice1=s[0:6]
 slice2=s[6:]
-print("Sliced string: ", slice1, slice2)
+#print("Sliced string: ", slice1, slice2)
 
 # 5. Lists, creating a string list, works the same with other data types.
 Samsung_Items = [
@@ -44,8 +44,8 @@ Samsung_Items = [
 ]
 Samsung_Items.append("Refrigerator")  # Adding an item to the list.
 Samsung_Items[0]="Microwave" # lists are mutable, so we can change items.
-print(Samsung_Items[2])  # Accessing a specific item by index.
-print("Samsung Items: ", Samsung_Items)
+#print(Samsung_Items[2])  # Accessing a specific item by index.
+#print("Samsung Items: ", Samsung_Items)
 
 # 6. Simple function with 1 parameter and a default value.
 def greet_user(username="Guest"):
@@ -55,4 +55,16 @@ def greet_user(username="Guest"):
     else:
         print("Hello, Guest!")
         
-greet_user("Aubrey")
+#greet_user("Aubrey")
+
+# 7. Useful built-in functions
+xarr=[14, 42, 3, 84, 95, 60]
+
+mx= max(xarr) 
+min= min(xarr)
+ln= len(xarr)
+srt= sorted(xarr)
+srtR= sorted(xarr, reverse=True)
+#print("Max:", mx, "Min:", min, "Length:", ln, "Sorted:", srt, "Reverse Sorted:", srtR)
+
+
