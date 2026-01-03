@@ -47,15 +47,16 @@ Samsung_Items[0]="Microwave" # lists are mutable, so we can change items.
 #print(Samsung_Items[2])  # Accessing a specific item by index.
 #print("Samsung Items: ", Samsung_Items)
 
+
 # 6. Simple function with 1 parameter and a default value.
 def greet_user(username="Guest"):
     """Displays a personalized greeting."""
     if isinstance(username, str) and username.strip():
         print(f"Hello, {username.strip().title()}!")
     else:
-        print("Hello, Guest!")
-        
+        print("Hello, Guest!")    
 #greet_user("Aubrey")
+
 
 # 7. Useful built-in functions
 xarr=[14, 42, 3, 84, 95, 60]
@@ -69,7 +70,6 @@ srtR= sorted(xarr, reverse=True)
 
 
 # 8. Exception Handling, (can be done for all tryes of errors: IndexError, ValueError, KeyError, etc)
-
 prices = [559, 879, "N/A", 349]
 try:
   print(sum(prices))
@@ -81,6 +81,22 @@ finally:
   
   # 9. Lamda function for quick operations.
   res = (lambda x, y: x + y) (2, 3)
-  print("lambda result:", res)
-
-
+  #print("lambda result:", res)
+  
+  # 10. Map and filters
+  #List of names in various cases
+names = ["aubreyletz", "bob", "AUBREY", "lEtz"]
+def capitalize(name): # Function to capitalize each name
+  return name.capitalize()
+capitalized = map(capitalize, names)
+capitalized = list(capitalized)
+#print(capitalized)
+  
+   
+#Example 2: Applying a discount to a list of prices using map()
+prices = [30.00, 10.10, 8, 19.00]
+def discount(price):
+  discounted_price = price * 0.9
+  return discounted_price
+discounted_prices = list(map(discount, prices))
+#print("Discounted Prices:", discounted_prices)
