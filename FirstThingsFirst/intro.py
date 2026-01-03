@@ -68,3 +68,14 @@ srtR= sorted(xarr, reverse=True)
 #print("Max:", mx, "Min:", min, "Length:", ln, "Sorted:", srt, "Reverse Sorted:", srtR)
 
 
+#Exception Handling, (can be done for all tryes of errors: IndexError, ValueError, KeyError, etc)
+
+prices = [559, 879, "N/A", 349]
+try:
+  print(sum(prices))
+except TypeError:
+  print("Check the prices")
+finally:
+  print("Need help? Contact us")
+
+
