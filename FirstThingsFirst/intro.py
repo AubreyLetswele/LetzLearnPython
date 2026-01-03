@@ -68,7 +68,7 @@ srtR= sorted(xarr, reverse=True)
 #print("Max:", mx, "Min:", min, "Length:", ln, "Sorted:", srt, "Reverse Sorted:", srtR)
 
 
-#Exception Handling, (can be done for all tryes of errors: IndexError, ValueError, KeyError, etc)
+# 8. Exception Handling, (can be done for all tryes of errors: IndexError, ValueError, KeyError, etc)
 
 prices = [559, 879, "N/A", 349]
 try:
@@ -77,5 +77,10 @@ except TypeError:
   print("Check the prices")
 finally:
   print("Need help? Contact us")
+  
+  
+  # 9. Lamda function for quick operations.
+  res = (lambda x, y: x + y) (2, 3)
+  print("lambda result:", res)
 
 
