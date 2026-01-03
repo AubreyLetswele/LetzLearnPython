@@ -114,7 +114,7 @@ current_date = datetime.datetime.now().date()
 
 
 
-# 12. importing libraries and using them.
+# 12. importing NUMPY library and using it.
 import numpy as np
 arrayN = np.array([1, 2, 3, 4, 5])
 meanN = np.mean(arrayN)
