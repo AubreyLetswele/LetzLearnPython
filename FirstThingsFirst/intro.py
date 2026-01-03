@@ -100,3 +100,23 @@ def discount(price):
   return discounted_price
 discounted_prices = list(map(discount, prices))
 #print("Discounted Prices:", discounted_prices)
+
+
+
+# 11. importing modules and using functions from them.
+import math
+import random
+import datetime
+
+sqrt_val = math.sqrt(64)
+randN= random.randint(1, 100)
+current_date = datetime.datetime.now().date()
+
+
+
+# 12. importing libraries and using them.
+import numpy as np
+arrayN = np.array([1, 2, 3, 4, 5])
+meanN = np.mean(arrayN)
+print("Mean of array:", meanN)
+
